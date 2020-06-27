@@ -12,7 +12,7 @@ namespace GradeBook.Tests
             var y = 2;
             var expected = 7;
 
-            var actual = x * y;
+            var actual = x + y;
 
             Assert.Equal(expected,actual);
 
