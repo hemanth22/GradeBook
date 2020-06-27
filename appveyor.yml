@@ -11,8 +11,6 @@ install:
 before_build:
   # Display .NET Core version
   - cmd: dotnet --version
-  # Display minimal restore text
-  - cmd: dotnet restore --verbosity m
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet build .\src\GradeBook --configuration Release --no-restore
