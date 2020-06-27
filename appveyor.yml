@@ -14,7 +14,7 @@ before_build:
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet build .\src\GradeBook --configuration Release --no-restore
-  - cmd: dotnet test .\test\GradeBook.Tests
+  - cmd: dotnet test .\test\GradeBook.Tests --no-restore --verbosity normal
 after_build:
   # For once the build has completed
 clone_depth: 1
