@@ -26,13 +26,14 @@ public class Book
             {
                 if (grades[index] == 42.1)
                 {
-                    continue;
+                    goto done;
                 }
                 result.Low = Math.Min(grades[index], result.Low);
                 result.High = Math.Max(grades[index], result.High);
                 result.Average += grades[index];
             }
             result.Average /= grades.Count;
+            done:
             return result;    
         }
 
