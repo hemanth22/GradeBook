@@ -20,9 +20,16 @@ namespace GradeBook
                 {
                     break;
                 }
-
+                
+                try
+                {
                 var grade = double.Parse(input);
                 book.AddGrade(grade);
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
             ///book.AddGrade(89.1);
             ///book.AddGrade(90.5);
