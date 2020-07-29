@@ -24,12 +24,15 @@ public class Book
 
             for(var index=0; index < grades.Count; index++)
             {
+                if (grades[index] == 42.1)
+                {
+                    break;
+                }
                 result.Low = Math.Min(grades[index], result.Low);
                 result.High = Math.Max(grades[index], result.High);
                 result.Average += grades[index];
             }
             result.Average /= grades.Count;
-
             return result;    
         }
 
