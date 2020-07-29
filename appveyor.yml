@@ -20,7 +20,7 @@ build_script:
 after_build:
   # For once the build has completed
 artifacts: 
- - path: 'bin\Release\netcoreapp3.1\'
+ - path: 'src\GradeBook\bin\Release\netcoreapp3.1\GradeBook.dll'
    name: DLL
    type: Auto
 clone_depth: 1
