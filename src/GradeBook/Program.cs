@@ -26,9 +26,17 @@ namespace GradeBook
                 var grade = double.Parse(input);
                 book.AddGrade(grade);
                 }
-                catch(Exception ex)
+                catch(ArithmeticException ex)
                 {
                     Console.WriteLine(ex.Message);
+                }
+                catch(SystemException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("**");
                 }
             }
             ///book.AddGrade(89.1);
