@@ -10,10 +10,24 @@ namespace GradeBook
         static void Main(string[] args)
         {
             var book = new Book("Bitra's Grade Book");
-            book.AddGrade(89.1);
-            book.AddGrade(90.5);
-            book.AddGrade(77.5);
-            book.GetStatistics();
+
+            while(true)
+            {
+                Console.WriteLine("Enter a grade or 'q' for quit");
+                var input = Console.ReadLine();
+
+                if(input == "q")
+                {
+                    break;
+                }
+
+                var grade = double.Parse(input);
+                book.AddGrade(grade);
+            }
+            ///book.AddGrade(89.1);
+            ///book.AddGrade(90.5);
+            ///book.AddGrade(77.5);
+            ////book.GetStatistics();
 
             var stats = book.GetStatistics();
 
