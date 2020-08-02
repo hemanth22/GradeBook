@@ -115,6 +115,8 @@ public class Book
         get;
         set;
     }
-        private string Name;
+
+    readonly string category = "Science";
+    
     }
 }
