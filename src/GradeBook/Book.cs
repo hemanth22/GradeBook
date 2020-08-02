@@ -10,7 +10,7 @@ public class Book
             Name = name;
         }
 
-        public void AddLetterGrade(char letter)
+        public void AddGrade(char letter)
         {
             switch(letter)
             {
@@ -90,6 +90,31 @@ public class Book
         }
 
         private List<double> grades;
-        public string Name;
+        
+ /*       public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                if(string.IsNullOrEmpty)
+                {
+                name = value;
+                }
+                else
+                {
+                    Console.WriteLine("Already Name exits");
+                }
+            }
+        } detail idea on get and set
+*/
+    public string Name;
+    {
+        get;
+        set;
+    }
+        private string Name;
     }
 }
