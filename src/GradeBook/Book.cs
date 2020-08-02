@@ -6,7 +6,7 @@ public class Book
     {
         public Book(string name)
         {
-            /// category = "";
+
             grades = new List<double>();
             Name = name;
         }
@@ -111,14 +111,14 @@ public class Book
             }
         } detail idea on get and set
 */
-    public string Name;
-    {
-        get;
-        set;
-    }
+        public string Name;
+        {
+            get;
+            set;
+        }
 
     //readonly string category = "Science";
-    const string category = "Science";
+        public const string CATEGORY = "Science";
 
     }
 }
