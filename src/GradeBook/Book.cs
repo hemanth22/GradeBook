@@ -4,7 +4,16 @@ namespace GradeBook
 {
     public delegate void GradeAddedDelegate(object sender,EventArgs args);
 
-    public class Book
+    public class NamedObject
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+    public class Book : NamedObject
     {
         public Book(string name)
         {
@@ -118,12 +127,12 @@ namespace GradeBook
             }
         } detail idea on get and set
 */
-        public string Name
+/*        public string Name
         {
             get;
             set;
         }
-
+*/
     ////readonly string category = "Science";
         public const string CATEGORY = "Science";
 
