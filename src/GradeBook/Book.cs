@@ -111,13 +111,13 @@ public class Book
             }
         } detail idea on get and set
 */
-        public string Name;
+        public string Name
         {
             get;
             set;
         }
 
-    //readonly string category = "Science";
+    ////readonly string category = "Science";
         public const string CATEGORY = "Science";
 
     }
