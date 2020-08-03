@@ -6,6 +6,10 @@ namespace GradeBook
 
     public class NamedObject
     {
+        public NamedObject(string name)
+        {
+            Name = name;
+        } 
         public string Name
         {
             get;
@@ -15,7 +19,7 @@ namespace GradeBook
 
     public class Book : NamedObject
     {
-        public Book(string name)
+        public Book(string name) : base(name)
         {
 
             grades = new List<double>();
