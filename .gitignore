@@ -35,6 +35,10 @@ bld/
 !.vscode/launch.json
 .vscode/extensions.json
 *.code-workspace
+src/GradeBook/bin/*
+src/GradeBook/obj/*
+test/GradeBook.Tests/bin/*
+test/GradeBook.Tests/obj/*
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
