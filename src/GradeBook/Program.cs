@@ -9,7 +9,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            IBook book = new InMemoryBook("Bitra's Grade Book");
+            IBook book = new DiskBook("Bitra's Grade Book");
             book.GradeAdded += OnGradeAdded;
 
             EnterGrade(book);
@@ -21,7 +21,7 @@ namespace GradeBook
             var stats = book.GetStatistics();
 
             ///Console.WriteLine(Book.CATEGORY);
-            Console.WriteLine(InMemoryBook.CATEGORY);
+            ///Console.WriteLine(InMemoryBook.CATEGORY);
             Console.WriteLine($"For the book named {book.Name}");
             Console.WriteLine($"The lowest grade is {stats.Low}");
             Console.WriteLine($"The highest grade is {stats.High}");
